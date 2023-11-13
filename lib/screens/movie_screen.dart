@@ -21,6 +21,7 @@ class MovieScreen extends StatelessWidget {
     );
   }
 
+// Boton de Añade a ver mas tarde //
   Positioned _buildActions(BuildContext context) {
     return Positioned(
       bottom: 50,
@@ -52,25 +53,23 @@ class MovieScreen extends StatelessWidget {
                       .copyWith(color: Colors.white),
                   children: [
                     TextSpan(
-                      text: 'Add to',
+                      text: 'Ver más tarde.',
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
-                    const TextSpan(
-                      text: 'WatchList',
-                    ),
                   ],
                 ),
               ),
             ),
+            //Boton ver pelicula
             const SizedBox(width: 10),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.all(15.0),
                 // ignore: deprecated_member_use
-                primary: Colors.white,
+                primary: const Color.fromARGB(255, 227, 14, 14),
                 fixedSize: Size(
                   MediaQuery.of(context).size.width * 0.425,
                   50,
@@ -83,8 +82,8 @@ class MovieScreen extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => _MoviePlayer(movie: movie),
-                      ),
+                    builder: (context) => _MoviePlayer(movie: movie),
+                  ),
                 );
               },
               child: RichText(
@@ -95,14 +94,11 @@ class MovieScreen extends StatelessWidget {
                       .copyWith(color: Colors.white),
                   children: [
                     TextSpan(
-                      text: 'Add to',
+                      text: 'Ver Pelicula',
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
-                    ),
-                    const TextSpan(
-                      text: 'WatchList',
                     ),
                   ],
                 ),
@@ -114,6 +110,7 @@ class MovieScreen extends StatelessWidget {
     );
   }
 
+//Informacion de la pelicula
   Positioned _buildMovieInformation(BuildContext context) {
     return Positioned(
       bottom: 150,
@@ -141,6 +138,7 @@ class MovieScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
+            //Clasificacion Estrellas
             RatingBar.builder(
               initialRating: 3.5,
               minRating: 1,
@@ -159,9 +157,10 @@ class MovieScreen extends StatelessWidget {
               },
               onRatingUpdate: (rating) {},
             ),
+            //Texto descripcion
             const SizedBox(height: 20),
             Text(
-              'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
+              'Este es un video de prueba para ver la descripcion de los videos a prueba que colocaremos en el proyecto',
               maxLines: 8,
               style: Theme.of(context)
                   .textTheme
@@ -174,6 +173,7 @@ class MovieScreen extends StatelessWidget {
     );
   }
 
+//metodo imagen
   List<Widget> _buildBackground(
     context,
     movie,
@@ -183,11 +183,14 @@ class MovieScreen extends StatelessWidget {
         height: double.infinity,
         color: const Color(0xFF000B49),
       ),
-      Image.network(
-        movie.imagePath,
-        width: double.infinity,
-        height: MediaQuery.of(context).size.height * 0.5,
-        fit: BoxFit.cover,
+      // ignore: avoid_unnecessary_containers
+      Container(
+        child: Image.network(
+          movie.imagePath,
+          width: double.infinity,
+          height: MediaQuery.of(context).size.height * 0.5,
+          fit: BoxFit.cover,
+        ),
       ),
       const Positioned.fill(
         child: DecoratedBox(

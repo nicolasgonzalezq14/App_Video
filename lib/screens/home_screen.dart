@@ -5,7 +5,7 @@ import '../models/movie_model.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
+//color texto y card
   @override
   Widget build(BuildContext context) {
     List<Movie> movies = Movie.movies;
@@ -45,13 +45,13 @@ class HomeScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineLarge,
                   children: [
                     TextSpan(
-                      text: 'Featured',
+                      text: 'Catalogo',
                       style: Theme.of(context)
                           .textTheme
                           .headlineLarge!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
-                    const TextSpan(text: 'Movies'),
+                    const TextSpan(text: 'Peliculas'),
                   ],
                 ),
               ),
