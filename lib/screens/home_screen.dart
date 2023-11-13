@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             color: const Color(0xFF000B49),
             child: Center(
               child: Text(
-                'Explore',
+                'TRAILERAMA',
                 style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
