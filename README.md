@@ -38,18 +38,14 @@ Para el apartado de la pagina principal (imagen izquierda), se uso un listviews 
 
 Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicula seleccionada con su informacion, valoracion, descripcion y los botones de acción para ver el trailer o ver mas tarde. 
 
-<<<<<<< HEAD
-<img src="C:\Users\javym\Documents\GitHub\App_Video\docs\Pantalla Principal.png"  style="margin-right:5px" width="300"/>
-
-<img src="C:\Users\javym\Documents\GitHub\App_Video\docs\2da pantalla.png"  width="300"/>
 
 <img src="https://ibb.co/svnV9qB"  width="300"/>
-=======
+
 <img src="https://hackmd.io/_uploads/Sy31uGgET.png"  style="margin-right:5px" width="300"/>
 
 <img src="https://hackmd.io/_uploads/B1hUpMeNp.png"  width="300"/>
 
->>>>>>> dba7bf4d9c8b6ed007748a5b48bfa063ee50c788
+
 
 ### Contenidos:
 
@@ -259,11 +255,10 @@ El proyecto sigue una estructura modular por funcionalidad, organizando los arch
 - - - __parallax_flow_delegate.dart:__ maneja el efecto en la lista de películas.
 - __main.dart:__ Punto de entrada de la aplicación, configura la aplicación y muestra la pantalla principal (HomeScreen).
 
-<<<<<<< HEAD
-<img src="C:\Users\javym\Documents\GitHub\App_Video\docs\arquitectura_app.png"  style="margin-right:5px" width="700"/>
-=======
+
+
 <img src="https://hackmd.io/_uploads/rk8L5ve4T.jpg"  style="margin-right:5px" width="700"/>
->>>>>>> dba7bf4d9c8b6ed007748a5b48bfa063ee50c788
+
 
 ### La arquitectura de la aplicación
 La arquitectura de la aplicación está basada en el patrón de diseño MVVM (Modelo-Vista-VistaModelo), que es común en aplicaciones Flutter, aunque no se especifica explícitamente un ViewModel, se puede inferir la estructura a partir de los archivos:
