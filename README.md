@@ -1,6 +1,6 @@
 # Evaluación II: Implementación de una característica en Flutter
 
-
+[![Screenshot-1.png](https://i.postimg.cc/Y2LYh4JG/Screenshot-1.png)](https://postimg.cc/qg0zF7B4)
 
 Curso: Electivo I: Desarrollo de Aplicaciones Móviles: Android e iOS
 Docente: Bruno Faúndez Valenzuela 
