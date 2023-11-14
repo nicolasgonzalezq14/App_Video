@@ -1,7 +1,7 @@
-import 'package:app_video/screens/movie_screen.dart';
+import 'package:app_video/screens/movie_screen/movie_screen.dart';
 import 'package:flutter/material.dart';
-import '../widgets/movie_list_item.dart';
-import '../models/movie_model.dart';
+import '../../widgets/movie_list_item.dart';
+import '../../models/movie_model.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'parallax_flow_delegate.dart';
 
 class MovieListItem extends StatelessWidget {
   final String imageUrl;
@@ -24,7 +25,7 @@ class MovieListItem extends StatelessWidget {
           child: Stack(
             children: [
               Flow(
-                delegate: _ParallaxFlowDelegate(
+                delegate: ParallaxFlowDelegate(
                   scrollable: Scrollable.of(context),
                   listItemContext: context,
                   backgroundImageKey: backgroundImageKey,
@@ -32,7 +33,6 @@ class MovieListItem extends StatelessWidget {
                 children: [
                   Image.network(
                     imageUrl,
-                    width: double.infinity,
                     key: backgroundImageKey,
                     fit: BoxFit.cover,
                   ),
@@ -63,18 +63,16 @@ class MovieListItem extends StatelessWidget {
                   children: [
                     Text(
                       name,
-                      style:
-                          Theme.of(context).textTheme.headlineLarge!.copyWith(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
+                      style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                     Text(
                       information,
-                      style:
-                          Theme.of(context).textTheme.headlineSmall!.copyWith(
-                                color: Colors.white,
-                              ),
+                      style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                            color: Colors.white,
+                          ),
                     ),
                   ],
                 ),
@@ -87,62 +85,4 @@ class MovieListItem extends StatelessWidget {
   }
 }
 
-class _ParallaxFlowDelegate extends FlowDelegate {
-  final ScrollableState scrollable;
-  final BuildContext listItemContext;
-  final GlobalKey backgroundImageKey;
 
-  _ParallaxFlowDelegate({
-    required this.scrollable,
-    required this.listItemContext,
-    required this.backgroundImageKey,
-  }) : super(repaint: scrollable.position);
-
-  //@override
-  BoxConstraints getConstrainsForChild(int i, BoxConstraints constraints) {
-    return BoxConstraints.tightFor(width: constraints.maxWidth);
-  }
-
-  @override
-  void paintChildren(FlowPaintingContext context) {
-    // Calcula la posición del tiempo de la lista dentro de la ventana
-    final scrollableBox = scrollable.context.findRenderObject() as RenderBox;
-    final listItemBox = listItemContext.findRenderObject() as RenderBox;
-    final listItemOffset = listItemBox.localToGlobal(
-      listItemBox.size.centerLeft(Offset.zero),
-      ancestor: scrollableBox,
-    );
-
-    // Determinar el porcentaje de posición del elemento de la lista dentro del área desplazable
-    final viewportDimension = scrollable.position.viewportDimension;
-    final scrollFraction =
-        (listItemOffset.dy / viewportDimension).clamp(0.0, 1.0);
-
-    // calculamos el alineamiton vertical del background basado en el scroll
-    final verticalAlignment = Alignment(0.0, scrollFraction * 2 - 1);
-
-    // convertimos un pixel pintado
-    final backgroundSize =
-        (backgroundImageKey.currentContext!.findRenderObject() as RenderBox)
-            .size;
-    final listItemSize = context.size;
-    final childRect = verticalAlignment.inscribe(
-      backgroundSize,
-      Offset.zero & listItemSize,
-    );
-
-    //Pintamos el backgruond
-    context.paintChild(
-      0,
-      transform:
-          Transform.translate(offset: Offset(0.0, childRect.top)).transform,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _ParallaxFlowDelegate oldDelegate) {
-    return scrollable != oldDelegate.scrollable ||
-        listItemContext != oldDelegate.listItemContext ||
-        backgroundImageKey != oldDelegate.backgroundImageKey;
-  }
-}
