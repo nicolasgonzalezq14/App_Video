@@ -35,13 +35,9 @@ Para el apartado de la pagina principal (imagen izquierda), se uso un listviews 
 
 Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicula seleccionada con su informacion, valoracion, descripcion y los botones de acción para ver el trailer o ver mas tarde. 
 
-![Screenshot 1][docs/Pantalla Principal.png]
+![Screenshot 1][https://raw.githubusercontent.com/nicolasgonzalezq14/App_Video/main/docs/Pantalla%20Principal.png]
 
-<img src="https://ibb.co/svnV9qB"  width="300"/>
 
-<img src="https://hackmd.io/_uploads/Sy31uGgET.png"  style="margin-right:5px" width="300"/>
-
-<img src="https://hackmd.io/_uploads/B1hUpMeNp.png"  width="300"/>
 
 
 
