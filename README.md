@@ -801,7 +801,7 @@ La aplicación también muestra un enfoque responsivo al utilizar MediaQuery par
 
 ## Video usando la App
 
-{%youtube JV6yIT3XcNE %}
+[![](https://markdown-videos.deta.dev/youtube/JV6yIT3XcNE&ab_channel=NicolásIgnacioGonzálezQuiñones)](https://youtu.be/JV6yIT3XcNE?si=aWh3CHmdql8n6IJj)
 
 
 
