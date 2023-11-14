@@ -46,15 +46,15 @@ Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicul
 
 ### Contenidos:
 
-- \1. Titulo de la App
-- \2. Texto Catalogo
-- \3. Titulo del trailer
-- \4. Informacion de la pelicula
-- \5. Card de la lista
-- \6. Imagen de la pelicula
-- \7. Informacion y valoración
-- \8. Descripción
-- \9. Botones de acción
+- 1. Titulo de la App
+- 2. Texto Catalogo
+- 3. Titulo del trailer
+- 4. Informacion de la pelicula
+- 5. Card de la lista
+- 6. Imagen de la pelicula
+- 7. Informacion y valoración
+- 8. Descripción
+- 9. Botones de acción
 
 
 
