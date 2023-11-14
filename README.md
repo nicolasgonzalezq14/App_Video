@@ -35,7 +35,7 @@ Para el apartado de la pagina principal (imagen izquierda), se uso un listviews 
 
 Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicula seleccionada con su informacion, valoracion, descripcion y los botones de acción para ver el trailer o ver mas tarde. 
 
-![Screenshot 1][https://raw.githubusercontent.com/nicolasgonzalezq14/App_Video/main/docs/Pantalla%20Principal.png]
+![Screenshot1][https://raw.githubusercontent.com/nicolasgonzalezq14/App_Video/main/docs/Pantalla%20Principal.png]
 
 
 
