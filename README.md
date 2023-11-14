@@ -37,7 +37,7 @@ Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicul
 
 
 
-<img src="https://github.com/nicolasgonzalezq14/App_Video/blob/main/docs/Pantalla%20Principal.png"  style="margin-right:5px" width="300"/><img src="https://github.com/nicolasgonzalezq14/App_Video/blob/main/docs/2da%20pantalla.png"  width="300"/>
+<img src="https://github.com/nicolasgonzalezq14/App_Video/blob/main/docs/Pantalla%20Principal.png"  style="margin-right:10px" width="300"/><img src="https://github.com/nicolasgonzalezq14/App_Video/blob/main/docs/2da%20pantalla.png"  width="300"/>
 
 
 
