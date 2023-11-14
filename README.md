@@ -42,10 +42,13 @@ Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicul
 <img src="C:\Users\javym\Documents\GitHub\App_Video\docs\Pantalla Principal.png"  style="margin-right:5px" width="300"/>
 
 <img src="C:\Users\javym\Documents\GitHub\App_Video\docs\2da pantalla.png"  width="300"/>
+
+<img src="https://ibb.co/svnV9qB"  width="300"/>
 =======
 <img src="https://hackmd.io/_uploads/Sy31uGgET.png"  style="margin-right:5px" width="300"/>
 
 <img src="https://hackmd.io/_uploads/B1hUpMeNp.png"  width="300"/>
+
 >>>>>>> dba7bf4d9c8b6ed007748a5b48bfa063ee50c788
 
 ### Contenidos:
