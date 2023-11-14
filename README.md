@@ -35,8 +35,10 @@ Para el apartado de la pagina principal (imagen izquierda), se uso un listviews 
 
 Al entrar en la pelicula (imagen derecha), debe contener la imagen de la pelicula seleccionada con su informacion, valoracion, descripcion y los botones de acción para ver el trailer o ver mas tarde. 
 
-![Screenshot 1][https://raw.githubusercontent.com/nicolasgonzalezq14/App_Video/main/docs/Pantalla%20Principal.png]
+[![Screenshot 1](https://github.com/nicolasgonzalezq14/App_Video/blob/main/docs/Pantalla%20Principal.png)[https://raw.githubusercontent.com/nicolasgonzalezq14/App_Video/main/docs/Pantalla%20Principal.png]]
 
+
+[![1.png](https://i.postimg.cc/CLHZqbJ1/1.png)](https://postimg.cc/2Vy8pbsR)
 
 
 
@@ -251,7 +253,7 @@ El proyecto sigue una estructura modular por funcionalidad, organizando los arch
 
 
 
-<img src="https://hackmd.io/_uploads/rk8L5ve4T.jpg"  style="margin-right:5px" width="700"/>
+[![2.png](https://i.postimg.cc/CLY5SzYV/2.png)](https://postimg.cc/vDqbv8cP)
 
 
 ### La arquitectura de la aplicación
