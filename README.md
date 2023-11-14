@@ -5,11 +5,8 @@
 Curso: Electivo I: Desarrollo de Aplicaciones Móviles: Android e iOS
 Docente: Bruno Faúndez Valenzuela 
 
-<<<<<<< HEAD
-## :memo: Proyecto: TRAILERAMA
-=======
+
 ## Proyecto: TRAILERAMA
->>>>>>> dba7bf4d9c8b6ed007748a5b48bfa063ee50c788
 
 ### Equipo
 
