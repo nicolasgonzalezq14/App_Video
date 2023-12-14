@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             color: const Color(0xFF000B49),
             child: Center(
               child: Text(
-                'TRAILERAMA',
+                'EntrenaConmigo',
                 style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -45,13 +45,13 @@ class HomeScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineLarge,
                   children: [
                     TextSpan(
-                      text: 'Catalogo',
+                      text: 'Entrena',
                       style: Theme.of(context)
                           .textTheme
                           .headlineLarge!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
-                    const TextSpan(text: 'Peliculas'),
+                    const TextSpan(text: 'Conmigo'),
                   ],
                 ),
               ),
